@@ -1,0 +1,26 @@
+.vertical {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.horizontal .title {
+  color: white;
+}
+
+.vertical .title {
+  color: #fff;
+  font-size: 36px;
+}
+
+.horizontal .title:hover {
+  color: #15135f;
+}
+
+.vertical .title:hover {
+  color: #f60;
+}
