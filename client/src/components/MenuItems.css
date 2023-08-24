@@ -6,21 +6,21 @@
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
-}
-
-.horizontal .title {
-  color: white;
+  color: #fff;
 }
 
 .vertical .title {
-  color: #fff;
   font-size: 36px;
 }
 
-.horizontal .title:hover {
-  color: #15135f;
+li .title:hover {
+  color: #f60;
 }
 
-.vertical .title:hover {
+.horizontal.color .title {
+  color: #355e3b;
+}
+
+.horizontal.color .title:hover {
   color: #f60;
 }
