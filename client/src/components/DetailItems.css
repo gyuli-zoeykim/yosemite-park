@@ -1,0 +1,43 @@
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  animation: move 15s linear infinite;
+}
+
+.contents {
+  padding-right: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.areas-of-focus.logo {
+  width: 120px;
+  height: auto;
+  margin: 0;
+}
+
+.areas-of-focus.logo img {
+  object-fit: contain;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.areas-of-focus h5 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  color: #355e3b;
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
 import { Link } from 'react-router-dom';
+import DetailItem from '../components/DetailItems';
 
 const HomePage = () => {
   const [customScale, setCustomScale] = useState(0);
@@ -152,46 +153,63 @@ const HomePage = () => {
           </p>
         </div>
         <div className="areas-of-focus icons">
-          <div className="items">
-            <div className="contents">
-              <figure className="areas-of-focus logo">
-                <img
-                  className="responsive-image"
-                  src="https://images.unsplash.com/photo-1625442827958-547189bc4e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1664&q=80"
-                  alt="yosemite"
-                />
-              </figure>
-              <h6>WILDLIFE MANAGEMENT</h6>
+          <DetailItem />
+          <DetailItem />
+        </div>
+      </div>
+      <div className="history section-four container">
+        <div className="block">
+          <figure className="image">
+            <img
+              className="responsive-image"
+              src="https://images.unsplash.com/photo-1562310503-a918c4c61e38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              alt="yosemite"
+            />
+          </figure>
+          <div className="right-side">
+            <div className="history-title">
+              <h3 className="section-title">History</h3>
             </div>
-            <div className="contents">
-              <figure className="areas-of-focus logo">
-                <img
-                  className="responsive-image"
-                  src="https://images.unsplash.com/photo-1625442827958-547189bc4e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1664&q=80"
-                  alt="yosemite"
-                />
-              </figure>
-              <h6>WILDLIFE MANAGEMENT</h6>
+            <p className="description-text">
+              A century-long history of philanthropy and partnership in Yosemite
+              National Park.
+            </p>
+            <Link className="who-we-are title" to="/">
+              <span>Learn More</span>
+              <span style={{ marginLeft: '5px' }}>➔</span>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className="footer">
+        <div className="horizontal-line"></div>
+        <div className="footer-wrapper">
+          <Link className="who-we-are title" to="/">
+            YOSEMITE
+          </Link>
+          <div className="column">
+            <Link className="who-we-are title" to="/">
+              Find Us
+            </Link>
+            <Link className="who-we-are title" to="/">
+              <div className="address">
+                9035 Village Dr
+                <br />
+                Yosemite Valley
+                <br />
+                CA 95389
+              </div>
+            </Link>
+          </div>
+          <div className="column">
+            <p>Reference</p>
+            <div>
+              <Link to="https://yosemite.org/">Yosemite</Link>
             </div>
-            <div className="contents">
-              <figure className="areas-of-focus logo">
-                <img
-                  className="responsive-image"
-                  src="https://images.unsplash.com/photo-1625442827958-547189bc4e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1664&q=80"
-                  alt="yosemite"
-                />
-              </figure>
-              <h6>WILDLIFE MANAGEMENT</h6>
-            </div>
-            <div className="contents">
-              <figure className="areas-of-focus logo">
-                <img
-                  className="responsive-image"
-                  src="https://images.unsplash.com/photo-1625442827958-547189bc4e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1664&q=80"
-                  alt="yosemite"
-                />
-              </figure>
-              <h6>WILDLIFE MANAGEMENT</h6>
+            <div>
+              <Link to="https://unsplash.com/s/photos/yosemite-national-park?orientation=landscape">
+                Unsplash
+              </Link>
             </div>
           </div>
         </div>
