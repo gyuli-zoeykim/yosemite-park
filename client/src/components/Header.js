@@ -6,7 +6,7 @@ import logo_icon from '../images/logo_icon.png';
 import logo_iconGreen from '../images/logo_iconGreen.png';
 import { IoCloseSharp } from 'react-icons/io5';
 
-const Header = () => {
+const Header = ({ refs, handleLogoClick }) => {
   const [open, setOpen] = useState(false);
   const [prevScroll, setPrevScroll] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -54,7 +54,7 @@ const Header = () => {
 
   return (
     <div className="header">
-      <div className="logo-icon-wrapper">
+      <div className="logo-icon-wrapper" onClick={handleLogoClick}>
         <Link className="title" to="/">
           <img
             className="logo-icon"
@@ -69,14 +69,17 @@ const Header = () => {
       </div>
       <div className={`bg-color ${bgColor ? 'visible' : 'hidden'}`}></div>
       <div className={`header-inner ${visible ? 'visible' : 'hidden'}`}>
-        <div className="logo-text-wrapper">
+        <div className="logo-text-wrapper" onClick={handleLogoClick}>
           <Link className="title" to="/">
             <span className={`logo-text ${bgColor && 'color'}`}>YOSEMITE</span>
           </Link>
         </div>
         <div className="menu">
           <ul className={`menu-horizontal`}>
-            <MenuItems active={`horizontal ${bgColor && 'color'}`} />
+            <MenuItems
+              active={`horizontal ${bgColor ? 'green' : 'white'}`}
+              refs={refs}
+            />
           </ul>
           {open ? (
             <IoCloseSharp className="close-icon" onClick={handleToggle} />

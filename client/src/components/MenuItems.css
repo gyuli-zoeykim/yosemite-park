@@ -17,10 +17,15 @@ li .title:hover {
   color: #f60;
 }
 
-.horizontal.color .title {
+.horizontal.white .title {
+  /* transition: color var(--transition-delay) ease-in-out; */
+  transition: color 1.2s;
+}
+
+.horizontal.green .title {
   color: #355e3b;
 }
 
-.horizontal.color .title:hover {
+.horizontal .title:hover {
   color: #f60;
 }
