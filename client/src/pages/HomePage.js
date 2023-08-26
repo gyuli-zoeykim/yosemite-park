@@ -95,10 +95,14 @@ const HomePage = () => {
               isSectionOneEntered ? 'entered' : 'exited'
             }`}>
             <div className="line"></div>
-            <Link className="who-we-are title" to="/">
+            <a
+              className="who-we-are title"
+              href="https://yosemite.org/about-us/"
+              target="_blank"
+              rel="noopener noreferrer">
               <span>Learn More</span>
               <span style={{ marginLeft: '5px' }}>➔</span>
-            </Link>
+            </a>
           </div>
         </div>
         <div className="what-we-do section-two container" ref={what}>
@@ -166,10 +170,14 @@ const HomePage = () => {
             </div>
           </div>
           <div className="what-we-do row-three">
-            <Link className="what-we-do title" to="/">
+            <a
+              className="what-we-do title"
+              href="https://yosemite.org/impact/iconic-and-past-projects/"
+              target="_blank"
+              rel="noopener noreferrer">
               <span>Learn More</span>
               <span style={{ marginLeft: '5px' }}>➔</span>
-            </Link>
+            </a>
           </div>
         </div>
         <div className="areas-of-focus section-three container" ref={ourImpact}>
@@ -205,10 +213,14 @@ const HomePage = () => {
                 A century-long history of philanthropy and partnership in
                 Yosemite National Park.
               </p>
-              <Link className="who-we-are title" to="/">
+              <a
+                className="who-we-are title"
+                href="https://yosemite.org/our-history/"
+                target="_blank"
+                rel="noopener noreferrer">
                 <span>Learn More</span>
                 <span style={{ marginLeft: '5px' }}>➔</span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -223,10 +235,18 @@ const HomePage = () => {
               </Link>
             </div>
             <div className="column">
-              <Link className="column-title link effect" to="/">
+              <a
+                className="column-title link effect"
+                href="https://www.google.com/maps/dir/Current+Location/9035+Village+Dr,+Yosemite+Valley,+CA+95389"
+                target="_blank"
+                rel="noopener noreferrer">
                 Find Us
-              </Link>
-              <Link className="column-text link effect" to="/">
+              </a>
+              <a
+                className="column-text link effect"
+                href="https://www.google.com/maps/dir/Current+Location/9035+Village+Dr,+Yosemite+Valley,+CA+95389"
+                target="_blank"
+                rel="noopener noreferrer">
                 <div className="address">
                   9035 Village Dr
                   <br />
@@ -234,23 +254,27 @@ const HomePage = () => {
                   <br />
                   CA 95389
                 </div>
-              </Link>
+              </a>
             </div>
             <div className="column">
               <p className="column-title">Reference</p>
               <div>
-                <Link
+                <a
                   className="column-text link effect"
-                  to="https://yosemite.org/">
+                  href="https://yosemite.org/"
+                  target="_blank"
+                  rel="noopener noreferrer">
                   Yosemite
-                </Link>
+                </a>
               </div>
               <div>
-                <Link
+                <a
                   className="column-text link effect"
-                  to="https://unsplash.com/s/photos/yosemite-national-park?orientation=landscape">
+                  href="https://unsplash.com/s/photos/yosemite-national-park?orientation=landscape"
+                  target="_blank"
+                  rel="noopener noreferrer">
                   Unsplash
-                </Link>
+                </a>
               </div>
             </div>
           </div>

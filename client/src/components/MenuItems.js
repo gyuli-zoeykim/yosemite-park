@@ -35,7 +35,7 @@ const MenuItems = ({ active, refs }) => {
         </Link>
       </li>
       <li className={active}>
-        <Link className="title" to="/show">
+        <Link className="title" to="/gallery">
           Gallery
         </Link>
       </li>

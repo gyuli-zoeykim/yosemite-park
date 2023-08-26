@@ -1,0 +1,48 @@
+.gallery {
+  padding: 80px 100px;
+}
+
+.gallery-img-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.margin {
+  margin-bottom: 150px;
+}
+
+.gallery-img-item {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  line-height: 0;
+}
+
+.gallery-img-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.gallery-img-item:hover {
+  flex: 1 1 50%;
+}
+
+.gallery-img-item:hover img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (width > 1800px) {
+  .gallery h3 {
+    font-size: 120px;
+  }
+}
