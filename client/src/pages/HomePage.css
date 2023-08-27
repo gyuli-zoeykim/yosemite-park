@@ -60,6 +60,10 @@
   line-height: 1.6;
 }
 
+.image {
+  margin: 0;
+}
+
 .intro-home {
   background-image: url('../images/intro.jpg');
   background-size: cover;
@@ -72,11 +76,16 @@
   align-items: center;
 }
 
+.who-we-are .image {
+  z-index: 100;
+}
+
 .section-title {
   font-size: 80px;
   font-weight: 500;
   line-height: 1.08;
   color: orange;
+  margin: 40px 0;
 }
 
 .who-we-are .section-title {
@@ -91,7 +100,7 @@
   margin: 0 0 20px;
 }
 
-.row-two {
+.test {
   gap: 55px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -106,10 +115,6 @@
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-}
-
-.image {
-  margin: 0;
 }
 
 .who-we-are .responsive-image {
@@ -188,7 +193,7 @@
   font-size: 24px;
   margin: 25px 0 15px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 500;
   color: #355e3b;
 }
 
@@ -366,13 +371,14 @@ p {
     gap: 40px;
   }
 
-  .section-one {
-    padding: 60px 150px 150px;
+  .section-one,
+  .section-two {
+    padding: 60px 70px 130px 140px;
   }
 
   .section-four .image {
-    max-width: 1040px;
-    height: 690px;
+    max-width: 500px;
+    height: 390px;
   }
 }
 
@@ -388,5 +394,41 @@ p {
 
   .intro-text {
     font-size: 70px;
+  }
+
+  .section-one {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 60px;
+    align-items: flex-start;
+  }
+
+  .section-two {
+    padding: 30px 20px 60px;
+  }
+
+  .section-title {
+    font-size: 50px;
+  }
+
+  .column-two {
+    max-width: 500px;
+    padding: 0;
+    font-size: 16px;
+    z-index: 100;
+    line-height: 1.6;
+    margin: 30px 0;
+  }
+
+  .section-one .title {
+    margin-top: 50px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .test {
+    grid-template-columns: 1fr;
   }
 }

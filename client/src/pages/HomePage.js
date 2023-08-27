@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './HomePage.css';
-import { Link } from 'react-router-dom';
 import DetailItem from '../components/DetailItems';
-import logo_textGreen from '../images/logo_textGreen.png';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const HomePage = () => {
   const [customScale, setCustomScale] = useState(0);
@@ -109,7 +108,7 @@ const HomePage = () => {
           <div className="what-we-do row-one">
             <h3 className="section-title">What We Do</h3>
           </div>
-          <div className="what-we-do row-two">
+          <div className="test row-two">
             <div className="what-we-do detail">
               <figure className="what-we-do image">
                 <img
@@ -224,61 +223,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="footer">
-          <div className="horizontal-line"></div>
-          <div className="footer-wrapper">
-            <div className="column">
-              <Link
-                className="column-logo link effect"
-                onClick={handleLogoClick}>
-                <img src={logo_textGreen} alt="text"></img>
-              </Link>
-            </div>
-            <div className="column">
-              <a
-                className="column-title link effect"
-                href="https://www.google.com/maps/dir/Current+Location/9035+Village+Dr,+Yosemite+Valley,+CA+95389"
-                target="_blank"
-                rel="noopener noreferrer">
-                Find Us
-              </a>
-              <a
-                className="column-text link effect"
-                href="https://www.google.com/maps/dir/Current+Location/9035+Village+Dr,+Yosemite+Valley,+CA+95389"
-                target="_blank"
-                rel="noopener noreferrer">
-                <div className="address">
-                  9035 Village Dr
-                  <br />
-                  Yosemite Valley
-                  <br />
-                  CA 95389
-                </div>
-              </a>
-            </div>
-            <div className="column">
-              <p className="column-title">Reference</p>
-              <div>
-                <a
-                  className="column-text link effect"
-                  href="https://yosemite.org/"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Yosemite
-                </a>
-              </div>
-              <div>
-                <a
-                  className="column-text link effect"
-                  href="https://unsplash.com/s/photos/yosemite-national-park?orientation=landscape"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Unsplash
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Footer handleLogoClick={handleLogoClick} />
       </section>
     </>
   );
