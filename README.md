@@ -2,7 +2,7 @@
 
 yosemite-park | [Live](https://gyulizoeykim.com/)
 
-In this project, I built a one page scrollable website.
+Inspired by recent trip at yosemite national park, I built a yosemite national park introductory website.
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
@@ -11,6 +11,9 @@ In this project, I built a one page scrollable website.
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
 ---
+
+![yosemite-park](https://github.com/gyuli-zoeykim/yosemite-park/assets/111097580/44e60b5f-2e08-4df9-b170-c5cc52db5a56)
+
 
 ---
 
