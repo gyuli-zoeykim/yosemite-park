@@ -23,11 +23,9 @@ const HomePage = () => {
       setCustomScale(scaledValue * 100);
       const newY = Math.min(scaledProgress * 130, 82);
       setColumnTwoY(newY);
-      console.log('window', windowHeight);
       const sectionOne = document.querySelector('.section-one');
       if (sectionOne) {
         const sectionOneRect = sectionOne.getBoundingClientRect();
-        console.log(sectionOneRect);
         if (sectionOneRect.top <= windowHeight && sectionOneRect.bottom >= 0) {
           setIsSectionOneEntered(true);
         } else {
@@ -41,8 +39,6 @@ const HomePage = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  console.log('s', customScale);
 
   const handleLogoClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
