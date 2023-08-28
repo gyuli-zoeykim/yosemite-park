@@ -2,14 +2,6 @@ import 'dotenv/config';
 import express from 'express';
 import errorMiddleware from './lib/error-middleware.js';
 import cors from 'cors';
-// import pg from 'pg';
-
-// const db = new pg.Pool({
-//   connectionString: process.env.DATABASE_URL,
-//   ssl: {
-//     rejectUnauthorized: false,
-//   },
-// });
 
 const app = express();
 

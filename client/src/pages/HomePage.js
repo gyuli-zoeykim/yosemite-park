@@ -108,7 +108,7 @@ const HomePage = () => {
           <div className="what-we-do row-one">
             <h3 className="section-title">What We Do</h3>
           </div>
-          <div className="test row-two">
+          <div className="what-we-do row-two">
             <div className="what-we-do detail">
               <figure className="what-we-do image">
                 <img
@@ -196,7 +196,10 @@ const HomePage = () => {
           </div>
         </div>
         <div className="history section-four container" ref={history}>
-          <div className="block">
+          <div className="history-title">
+            <h4 className="section-title mobile">History</h4>
+          </div>
+          <div className="history-img">
             <figure className="image">
               <img
                 className="responsive-image"
@@ -206,7 +209,7 @@ const HomePage = () => {
             </figure>
             <div className="right-side">
               <div className="history-title">
-                <h4 className="section-title">History</h4>
+                <h4 className="section-title desktop">History</h4>
               </div>
               <p className="description-text">
                 A century-long history of philanthropy and partnership in
@@ -220,6 +223,99 @@ const HomePage = () => {
                 <span>Learn More</span>
                 <span style={{ marginLeft: '5px' }}>➔</span>
               </a>
+            </div>
+          </div>
+        </div>
+        <div className="gallery section-five">
+          <div className="gallery-heading">
+            <h3 className="section-title">Gallery</h3>
+          </div>
+          <div className="gallery-img-wrapper">
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1454982523318-4b6396f39d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="yosemite"
+              />
+            </div>
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1542773998-9325f0a098d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+                alt="yosemite"
+              />
+            </div>
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1553368165-1e051cb08280?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="yosemite"
+              />
+            </div>
+          </div>
+          <div className="gallery-img-wrapper">
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1517054612019-1bf855127c43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1940&q=80"
+                alt="yosemite"
+              />
+            </div>
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1688166708991-ce8c5fcf5f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+                alt="yosemite"
+              />
+            </div>
+          </div>
+          <div className="gallery-img-wrapper">
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1516191726963-61dae894c237?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="yosemite"
+              />
+            </div>
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1533189436791-fac0716f376f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+                alt="yosemite"
+              />
+            </div>
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1478718995235-ccd18eeff8c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2044&q=80"
+                alt="yosemite"
+              />
+            </div>
+          </div>
+          <div className="gallery-img-wrapper">
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1494088391210-792bbadb00f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="yosemite"
+              />
+            </div>
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1556114492-0738d9d8a2cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                alt="yosemite"
+              />
+            </div>
+          </div>
+          <div className="gallery-img-wrapper">
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1688362378155-bbb2d369b2c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                alt="yosemite"
+              />
+            </div>
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1513351990348-3d341c6f40e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80"
+                alt="yosemite"
+              />
+            </div>
+            <div className="gallery-img-item">
+              <img
+                src="https://images.unsplash.com/photo-1664348503110-5f29ba8a07e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1924&q=80"
+                alt="yosemite"
+              />
             </div>
           </div>
         </div>

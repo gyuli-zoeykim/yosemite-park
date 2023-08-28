@@ -41,3 +41,17 @@
   margin: 0;
   color: #355e3b;
 }
+
+@media (width <=850px) {
+  .contents {
+    padding-right: 90px;
+  }
+
+  .areas-of-focus.logo {
+    max-width: 90px;
+  }
+
+  .areas-of-focus h5 {
+    font-size: 16px;
+  }
+}

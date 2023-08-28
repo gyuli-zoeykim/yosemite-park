@@ -230,7 +230,7 @@ p {
   display: block;
 }
 
-.block {
+.history-img {
   display: flex;
 }
 
@@ -324,6 +324,51 @@ p {
   color: orange;
 }
 
+.gallery {
+  padding: 80px 120px;
+  transition: 0.5s;
+}
+
+.gallery h3 {
+  margin: 0;
+}
+
+.gallery-img-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 55vh;
+  transition: 0.5s;
+}
+
+.gallery-img-item {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  line-height: 0;
+}
+
+.gallery-img-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-img-item:hover {
+  flex: 1 1 65%;
+}
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
 @media (width > 1800px) {
   .intro-text {
     font-size: 240px;
@@ -354,6 +399,14 @@ p {
   .container h3 {
     font-size: 120px;
   }
+
+  .gallery h3 {
+    font-size: 120px;
+  }
+
+  .gallery-img-wrapper {
+    height: 100vh;
+  }
 }
 
 @media (width <=1024px) {
@@ -379,6 +432,14 @@ p {
   .section-four .image {
     max-width: 500px;
     height: 390px;
+  }
+
+  .gallery h3 {
+    font-size: 60px;
+  }
+
+  .footer-wrapper {
+    gap: 80px;
   }
 }
 
@@ -407,6 +468,11 @@ p {
     padding: 30px 20px 60px;
   }
 
+  .what-we-do.row-three {
+    text-align: left;
+    margin: 20px 0 0;
+  }
+
   .section-title {
     font-size: 50px;
   }
@@ -428,7 +494,74 @@ p {
     display: none;
   }
 
-  .test {
+  .what-we-do.row-two {
     grid-template-columns: 1fr;
+  }
+
+  .description {
+    padding: 0 20px;
+  }
+
+  .description-text {
+    max-width: 100%;
+  }
+
+  .footer .column.mobile {
+    margin-top: 20px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .section-four {
+    padding: 20px 20px 60px;
+  }
+
+  .history-img {
+    flex-direction: column;
+  }
+
+  .right-side {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .right-side .description-text {
+    max-width: 100%;
+  }
+
+  .section-four .image {
+    margin-bottom: 30px;
+    max-width: 100%;
+    max-height: 260px;
+  }
+
+  .gallery {
+    padding: 20px 20px 60px;
+  }
+
+  .gallery-heading {
+    margin-bottom: 25px;
+  }
+
+  .gallery-img-wrapper {
+    padding: 0 0 10px;
+    gap: 10px;
+  }
+
+  .gallery-img-item {
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .footer-wrapper {
+    padding-top: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
   }
 }
