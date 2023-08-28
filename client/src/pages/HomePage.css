@@ -218,6 +218,12 @@ p {
   overflow: hidden;
 }
 
+.row-two {
+  gap: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .what-we-do.row-three {
   width: 100%;
   margin: 80px 0 0;
@@ -410,6 +416,15 @@ p {
 }
 
 @media (width <=1024px) {
+  .intro-head {
+    top: 36%;
+  }
+
+  .intro-text {
+    font-size: 130px;
+    top: 40%;
+  }
+
   .column-two {
     font-size: 16px;
     padding-left: 45px;
@@ -451,10 +466,12 @@ p {
 
   .intro-head {
     font-size: 24px;
+    top: 38%;
   }
 
   .intro-text {
-    font-size: 70px;
+    font-size: 60px;
+    top: 41%;
   }
 
   .section-one {

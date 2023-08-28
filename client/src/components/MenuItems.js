@@ -12,9 +12,7 @@ const MenuItems = ({ active, refs }) => {
 
   return (
     <>
-      <li
-        className={`title ${active}`}
-        onClick={() => scrollToSection(refs.who)}>
+      <li className={active} onClick={() => scrollToSection(refs.who)}>
         <Link className="title" onClick={() => scrollToSection(refs.who)}>
           Who
         </Link>
