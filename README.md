@@ -2,7 +2,7 @@
 
 yosemite-park | [Live](https://gyulizoeykim.com/)
 
-Inspired by recent trip at yosemite national park, I built a yosemite national park introductory website.
+Built a yosemite national park introductory website. Inspired by a recent family trip at yosemite national park.
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
