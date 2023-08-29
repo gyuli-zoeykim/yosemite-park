@@ -1,6 +1,6 @@
 ## Project:3 - Building a One Page Website: Yosemite National Park
 
-yosemite-park | [Live](https://gyulizoeykim.com/)
+Yosemite Park | [Live](https://gyulizoeykim.com/)
 
 Built a yosemite national park introductory website. Inspired by a recent family trip at yosemite national park.
 
