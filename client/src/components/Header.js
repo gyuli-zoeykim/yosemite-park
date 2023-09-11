@@ -48,9 +48,15 @@ const Header = ({ refs, handleLogoClick }) => {
       setPrevScroll(currentScrollPos);
     };
 
+    const handleTouchMove = () => {
+      handleScroll();
+    };
+
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('touchmove', handleTouchMove);
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('touchmove', handleTouchMove);
     };
   }, [prevScroll, open]);
 

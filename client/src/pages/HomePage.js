@@ -32,7 +32,7 @@ const HomePage = () => {
         const documentHeight = document.documentElement.scrollHeight;
         const scaledProgress = scrollY / (documentHeight - windowHeight);
         const scaledValue = Math.min(scaledProgress * 1.2, 0.5);
-        setCustomScale(scaledValue * 100);
+        setCustomScale(scaledValue * 200);
         const newY = Math.min(scaledProgress * 130, 82);
         setColumnTwoY(newY);
         const sectionOne = document.querySelector('.section-one');
@@ -165,7 +165,7 @@ const HomePage = () => {
             style={{
               transition: 'transform 0.1s ease-out',
               transform: `translate(${-customScale}%, ${customScale}%) scale(${
-                (customScale / 100) * 2
+                customScale / 100
               })`,
             }}></div>
           <div

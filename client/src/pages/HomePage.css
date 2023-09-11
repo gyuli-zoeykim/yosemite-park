@@ -519,6 +519,16 @@ p {
     gap: 40px;
   }
 
+  .who-we-are-description {
+    max-width: 205px;
+    font-size: 16px;
+    padding: 0 20px 0 45px;
+  }
+
+  .who-we-are-image {
+    width: 100%;
+  }
+
   .section-one,
   .section-two {
     padding: 60px 70px 130px 140px;
@@ -559,6 +569,21 @@ p {
     flex-direction: column;
     padding: 30px 20px 60px;
     align-items: flex-start;
+  }
+
+  .who-we-are-description {
+    max-width: 500px;
+    padding: 0;
+  }
+
+  .who-we-are.column-one {
+    max-width: 500px;
+  }
+
+  .sphere {
+    width: 185px;
+    height: 185px;
+    filter: blur(40px);
   }
 
   .section-two {
@@ -660,5 +685,11 @@ p {
     padding-top: 20px;
     grid-template-columns: 1fr 1fr;
     gap: 0;
+  }
+}
+
+@media (width <=576px) {
+  .sphere {
+    display: none;
   }
 }
